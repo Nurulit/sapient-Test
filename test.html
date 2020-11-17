@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home: spacex launch program</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style type="text/css">
+    .launchYbtn .btnRow{display:flex;justify-content:space-between;}
+    .yearbtn{background-color:#c5e09b;margin-bottom:10px;padding:4px 14px;font-size:12px;border-radius:2px;line-height:normal;font-weight:bold;}
+    .launchProgramRow h1{font-size:24px;font-weight:bold;color:#000;margin-bottom:20px;}
+    .filterSec{display:flex;flex-direction:column;}
+    .filterSec h3{font-size:16px;font-weight:bold;margin-top:0;}
+    .filterSec .launchRow,.filterSec .successlaunchRow, .filterSec .successlandRow{display:flex;justify-content:center;margin-bottom:7px;}
+    .filterSec .launchRow h5,.filterSec .successlaunchRow h5, .filterSec .successlandRow h5{width:140px;text-align:center;border-bottom:1px solid #afafaf;padding-bottom:4px;}
+    .productCol{height:365px; margin-bottom:30px;}
+    .productCol img{height:175px;width:auto;}
+    h3.productTitle{color:#444e8b;font-size:16px;font-weight:bold;}
+    h4.productId{font-size:16px;font-weight:bold;color:#000;margin-bottom:5px;}
+    .productCol ul li{font-size:12px;}
+    .productCol p{color:#000;margin-bottom:5px;}
+    .productCol p span{font-size:12px;}
+    .btn.yearbtn.active{background-color:#7cba01;outline:none;}
+    @media screen and (max-width:767px){
+      .productCol{text-align:center;}
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 launchProgramRow">
+      <h1>SpaceX Launch Program</h1>
+    </div>
+    <!-- Left Section -->
+    <div class="col-sm-2 filterSec">
+      <h3>Filters</h3>
+      <div class="launchRow">
+        <h5>Launch Year</h5>
+      </div>
+      <div class="col-sm-12 launchYbtn">
+        <div class="row">
+          <div class="btnRow">
+              <div class="btnCol">
+                <input type="button" name="" data="year" class="btn yearbtn" value="2006">
+              </div>
+              <div class="btnCol">
+                <input type="button" name="" data="year" class="btn yearbtn" value="2007">
+              </div>
+          </div>
+
+          <!-- 2nd -->
+          <div class="btnRow">
+              <div class="btnCol">
+                <input type="button" name="" data="year" class="btn yearbtn" value="2008">
+              </div>
+              <div class="btnCol">
+                <input type="button" name="" data="year" class="btn yearbtn" value="2009">
+              </div>
+          </div>
+          <!-- 3rd -->
+          <div class="btnRow">
+              <div class="btnCol">
+                <input type="button" name="" data="year" class="btn yearbtn" value="2010">
+              </div>
+              <div class="btnCol">
+                <input type="button" name="" data="year" class="btn yearbtn" value="2011">
+              </div>
+          </div>
+          <!-- 4th -->
+          <div class="btnRow">
+              <div class="btnCol">
+                <input type="button" name="" data="year" class="btn yearbtn" value="2012">
+              </div>
+              <div class="btnCol">
+                <input type="button" name="" data="year" class="btn yearbtn" value="2013">
+              </div>
+          </div>
+          <!-- 5th -->
+          <div class="btnRow">
+              <div class="btnCol">
+                <input type="button" name="" data="year" class="btn yearbtn" value="2014">
+              </div>
+              <div class="btnCol">
+                <input type="button" name="" data="year" class="btn yearbtn" value="2015">
+              </div>
+          </div>
+          <!-- 6th -->
+          <div class="btnRow">
+              <div class="btnCol">
+                <input type="button" name="" data="year"class="btn yearbtn" value="2016">
+              </div>
+              <div class="btnCol">
+                <input type="button" name="" data="year" class="btn yearbtn" value="2017">
+              </div>
+          </div>
+          <!-- 7th -->
+          <div class="btnRow">
+              <div class="btnCol">
+                <input type="button" name="" data="year" class="btn yearbtn" value="2018">
+              </div>
+              <div class="btnCol">
+                <input type="button" name="" data="year" class="btn yearbtn" value="2019">
+              </div>
+          </div>
+          <!-- 8Th -->
+          <div class="btnRow">
+              <div class="btnCol">
+                <input type="button" name="" data="year" class="btn yearbtn" value="2020">
+              </div>
+          </div>
+          <!-- 8th End -->
+        </div>
+
+      </div>
+
+      <!-- Success Full Launch -->
+      <div class="successlaunchRow">
+        <h5>Successful Launch</h5>
+      </div>
+      <div class="col-sm-12 launchYbtn">
+        <div class="row">
+          <div class="btnRow">
+              <div class="btnCol">
+                <input type="button" name="" data="launch" class="btn yearbtn" value="true">
+              </div>
+              <div class="btnCol">
+                <input type="button" name="" data="launch" class="btn yearbtn" value="false">
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Successfull Landing -->
+      <div class="successlandRow">
+        <h5>Successful Landing</h5>
+      </div>
+      <div class="col-sm-12 launchYbtn">
+        <div class="row">
+          <div class="btnRow">
+              <div class="btnCol">
+                <input type="button" name="" data="land" class="btn yearbtn" value="true">
+              </div>
+              <div class="btnCol">
+                <input type="button" name="" data="land" class="btn yearbtn" value="false">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Left Section End -->
+    <!-- Right Section -->
+    <div class="col-sm-10 productRow">
+      <div class="row" id="productList">
+      </div>
+    </div>
+    <!-- Right Section End -->
+  </div>
+</div>
+<input type="hidden" id="selectyear">
+<input type="hidden" id="selectlaunch">
+<input type="hidden" id="selectland">
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  <script type="text/javascript">
+    $(document).ready(function () {     
+     loadData();
+     $('.btn').click(function(){
+       $('#select'+$(this).attr('data')).val($(this).val()); // dynamic
+       loadData();
+      });
+      function loadData(){
+      var params = {limit:100};
+      if($('#selectyear').val() != ''){
+      params.launch_year = $('#selectyear').val();
+      }
+      if($('#selectlaunch').val() != ''){
+      params.launch_success = $('#selectlaunch').val();
+      }
+      if($('#selectland').val() != ''){
+      params.land_success = $('#selectland').val();
+      }   
+      $.get('https://api.spacexdata.com/v3/launches', params, function (data, textStatus, jqXHR){
+      $('#productList').html('');
+      data.forEach(obj => {
+        var missionIds = obj.mission_id.join(',');        
+         $('#productList').prepend('<div class="col-sm-3 productCol"><img src="'+obj.links.mission_patch_small+'" alt="FalconSat"><h3 class="productTitle">'+obj.mission_name+' #1</h3><h4 class="productId">Mission Ids:</h4><ul><li>'+missionIds+'</li></ul><p><strong>Launch Year:</strong> <span>'+obj.launch_year+'</span></p><p><strong>Successful Launch:</strong> <span>'+obj.launch_success+'</span></p><p><strong>Successful Landing:</strong> <span>'+obj.rocket.first_stage.cores[0].land_success+'</span></p></div>');
+          });     
+        }); 
+      } 
+      //Add Active class on click
+      $('.btn').click(function(){
+       $(".btn").removeClass("active");
+       $(this).addClass('active');
+      });
+    });  
+    </script>
+</body>
+</html>
